@@ -20,11 +20,12 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:text="First Name"
-        android:background="@drawable/background_btn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:hint="@string/enter_first_name"
+    android:textColorHint="@color/white"
+    android:background="@drawable/background_btn"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Last Name EditText -->
     <EditText
@@ -37,11 +38,12 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:text="Last Name"
-        android:background="@drawable/background_btn"
-        app:layout_constraintTop_toBottomOf="@id/editTextText4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:hint="enter_last_name"
+    android:textColorHint="@color/white"
+    android:background="@drawable/background_btn"
+    app:layout_constraintTop_toBottomOf="@id/editTextText4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Email EditText -->
     <EditText
@@ -53,11 +55,13 @@
         android:layout_marginEnd="16dp"
         android:padding="10dp"
         android:textColor="@color/white"
-        android:text="Email"
-        android:background="@drawable/background_btn"
-        app:layout_constraintTop_toBottomOf="@id/editTextText3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textSize="16sp"
+        android:hint="enter_email"
+    android:textColorHint="@color/white"
+    android:background="@drawable/background_btn"
+    app:layout_constraintTop_toBottomOf="@id/editTextText3"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Snackbar Button -->
     <Button
