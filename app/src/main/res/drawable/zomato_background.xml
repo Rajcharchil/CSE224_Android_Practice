@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- First gradient background layer -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#FF5A5F"
+            android:endColor="#5A0505"
+            android:angle="50"
+            android:type="linear"/>
+        </shape>
+    </item>
+
+    <!-- Second overlay with curved shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp"/>
+            <gradient
+                android:startColor="#FF6F61"
+            android:endColor="#850410"
+            android:angle="50"/>
+        </shape>
+        <!-- You can adjust the positioning of the curve or add multiple items for more layers if needed -->
+    </item>
+</layer-list>
