@@ -2,11 +2,11 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <corners android:radius="50dp" />
+             />
             <gradient
                 android:angle="360"
-                android:endColor="#0f8a75"
-                android:startColor="#7c3660"
+                android:startColor="#E6593D"
+                android:endColor="#E6B20E"
                 android:type="linear" />
             <size
                 android:width="24dp"
