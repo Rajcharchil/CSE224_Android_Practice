@@ -10,6 +10,7 @@
     android:id="@+id/main"
     tools:context=".MainActivity">
 
+
     <!-- Toolbar with Drawer and Notification Icon -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -93,7 +94,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/tvTodaysTimetable">
+        app:layout_constraintTop_toBottomOf="@+id/tvTodaysTimetable"
+        tools:ignore="MissingConstraints">
 
 
         <androidx.cardview.widget.CardView
@@ -389,4 +391,23 @@
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/rvTilesGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/rvTilesGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

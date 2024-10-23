@@ -14,6 +14,8 @@ class MainActivity2_Intent : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_activity2_intent)
 
+
+
 //         Button to open Google
         val openGoogleButton = findViewById<MaterialButton>(R.id.openGoogleButton)
         openGoogleButton.setOnClickListener {
