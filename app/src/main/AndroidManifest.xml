@@ -13,8 +13,11 @@
         android:theme="@style/Theme.Localization"
         tools:targetApi="31">
         <activity
+            android:name=".Toolbar"
+            android:exported="true" />
+        <activity
             android:name=".Calculator"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".splashWithGif"
             android:exported="true" />

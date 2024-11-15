@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Localization" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Localization" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="actionBarTheme">@style/ToolbarStyle</item> <!-- Add custom Toolbar style -->
     </style>
 
     <style name="Theme.Localization" parent="Base.Theme.Localization" />
+
+    <!-- Custom Toolbar Style -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/toolbarBackground</item> <!-- Customize toolbar color -->
+        <item name="android:titleTextColor">@android:color/white</item> <!-- Title text color -->
+    </style>
 </resources>
