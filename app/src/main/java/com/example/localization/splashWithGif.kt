@@ -15,7 +15,7 @@ class splashWithGif : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_with_gif)
 
-        Handler(Looper.getMainLooper()).postDelayed({startActivity(Intent(this,Activity_Life_Cycle::class.java))
+        Handler(Looper.getMainLooper()).postDelayed({startActivity(Intent(this,SignUpPage::class.java))
             finish() },2000)
 
     }

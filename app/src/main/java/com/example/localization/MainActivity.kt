@@ -53,11 +53,7 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
 
                 // Optionally, show a toast with the entered details
-                Toast.makeText(
-                    this,
-                    "Welcome, $firstName $lastName!\nEmail: $email",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(this,"Welcome, $firstName $lastName!\nEmail: $email", Toast.LENGTH_LONG).show()
 
                 // TODO: You can add logic here to store the data or navigate to another screen.
             } else {

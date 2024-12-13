@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,30 @@
         android:theme="@style/Theme.Localization"
         tools:targetApi="31">
         <activity
+            android:name=".actionBar"
+            android:exported="true" />
+        <activity
+            android:name=".ColourChangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RadioSelecting"
+            android:exported="true" /> <!-- Firebase & Google Sign-In Configuration -->
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.BROWSER_ACCOUNTS"
+            android:value="true" /> <!-- Activities -->
+        <activity
+            android:name=".ForgetPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
             android:name=".Toolbar"
             android:exported="true" />
         <activity
@@ -20,9 +46,15 @@
             android:exported="true" />
         <activity
             android:name=".splashWithGif"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".Activity_Life_Cycle"
+            android:name=".SignUpPage"
             android:exported="true" />
         <activity
             android:name=".intent_second_activity"
@@ -32,13 +64,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Lpu_touch"
             android:exported="true" />

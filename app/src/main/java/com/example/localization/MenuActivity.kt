@@ -1,35 +1,31 @@
 package com.example.localization
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.example.localization.databinding.ActivityMenuBinding
 
-class Toolbar : AppCompatActivity() {
-    private lateinit var mainText: TextView
-
-    @SuppressLint("MissingInflatedId")
+class MenuActivity : AppCompatActivity() {
+    private  lateinit var binding: ActivityMenuBinding
+    private lateinit var mainText : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge() // Optional if using edge-to-edge support
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_menu)
 
-        setContentView(R.layout.activity_toolbar)
-
-        // Set the Toolbar as the action bar
-//        val toolbar: Toolbar = findViewById(R.id.toolbar)
-//        setSupportActionBar(toolbar)
-        var actionBar = supportActionBar
+        val actionBar = supportActionBar
         actionBar!!.title = "Sample title"
         actionBar!!.subtitle = "Sub title"
 
         actionBar.setDisplayShowHomeEnabled(true)
-//        actionBar.
-        // Initialize TextView
-        mainText = findViewById(R.id.textView11)
+
+        mainText = binding.textView11
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -48,4 +44,6 @@ class Toolbar : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
 }

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="white">#EFF1F6</color>
     <color name="blue">#061E65</color>
     <color name="red">#FC9B75</color>
     <color name="red2">#DF3444</color>
+    <color name="purple_500">#6200EE</color>
 
-        <color name="primaryColor">#6200EE</color> <!-- Purple -->
+
+    <color name="primaryColor">#6200EE</color> <!-- Purple -->
         <color name="primaryDarkColor">#3700B3</color> <!-- Dark Purple -->
         <color name="secondaryColor">#03DAC5</color> <!-- Teal -->
         <color name="toolbarBackground">#6200EE</color> <!-- Same as primaryColor for example -->
